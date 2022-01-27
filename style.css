@@ -1,0 +1,127 @@
+header{
+    background: #CCCCCC;
+    padding: 20px 0;      /* espaçamento interno  TOP, UP = 20px LEFT, RIGHT = 0*/
+}
+.caixa{
+    position: relative; /* PRECISO POSICIONAR A CAIXA ("position:relative") PARA PODER POSICIONAR O MENU (nav { position: absolute;    .......     */
+    width: 940px; 
+    margin: 0 auto;  /* espaçamento externo top up = 0  left right = auto (calcula automaticamente)  */
+}
+nav{
+    position: absolute;             /* position: absolute= eu defino o posicionamento atraves dos valores no top, right etc... */
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;               /*  Altero forma de visualição da lista */
+    margin: 0 0 0 15px;            /* margin= espaçamento externo. Espaçamento a ESQUERDA = margin: top 0 right 0 up 0 left 15px;  */    
+}
+nav a{
+    text-transform: uppercase;     /* Altero o comportamento visual do HTML(MENU DE NAV FICA COM LETRAS MAIÚSCULAS */
+    color: #000000;              /* Altera cor do texto */
+    font-weight: bold;             /* NEGRITO */
+    font-size: 26px;               /* tamanho fonte */
+    text-decoration: none;         /* retira decoração do texto. Fica sem o sublinhado */
+}
+nav a:hover{                        /* hover= mouse emcima do elemento.  nav a: hover= vai mapear os links do menu de navegação */
+    color: #c78c19;               /* cor da alteração */
+    text-decoration: underline;     /* função de sublinhar */
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;                /*  0 UP and TOP, auto para os lados     */
+    padding: 50px 0 ;              /* 50px= UP TOP 0= right left */    
+}
+.produtos li{
+    display: inline-block;         /* inline-block= vai exibir o seu tamanho, porém permite lterar o tamanho*/
+    text-align: center;            /*  centraliza todos itens do produtos */
+    width: 30%;                    /* cada elemento ter 30% de 100% da página */
+    vertical-align: top;           /* itens carregam pela linha de */
+    margin: 0 1.5%;                /* ( ATENÇÃO UTILIZAR " . "   NÃOOOOO   " , "   0= UP , TOP   1.5 RIGHT LEFT  ) */
+    padding: 30px 20px;            /* 30px UP TOP  20px RIGHT LEFT */                    
+    box-sizing: border-box;        /*  vai respeitar os  "width: 30%;"  e os espaçamento interno estão dentro dos 30%*/
+    border: 2px solid #000000;   /* única expressão para declarar a borda  "border: (tamanho) (tipo de borda) (cor)" */
+    border-radius: 10px;           /*Fazer bordar arredondadas nos cantos "border-radius: 10px" = todos cantos iguais.  "border-radius: 10px 20px 30px 40px;"= cada canto com uma medida*/
+}
+.produtos li:hover{
+    border-color: #c78c19;       /* forma simplifica, apenas trocar a cor da borda "border-color" */
+}
+.produtos li:active{                /* active= quando mouse for pressionado sobre item */
+    border-color: #088c19;
+}
+.produtos li:hover h2{              /* Altero o tamanho de outro elemento "h2" =  Quando mouse estiver sobre li dos produtos, h2 vai ter 40px*/
+    font-size: 34px;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-descricao{
+    font-size: 18px;
+}
+.produtos-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;       /* expressão simplificada (espaçamento apenas no TOP) */
+}
+footer{
+    text-align: center;
+    background: url(bg.jpg); /* inserir imagem como fundo "background: url(bg.jpg)" */
+    padding: 20px 0;
+    color: #FFFFFF
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 20px 0;  
+}
+main{
+    width: 940px;
+    margin:auto;
+}
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;         /* display: block; = ocupa toda tela  */
+    font-size: 20px;
+    margin: 0 0 10px;       /* marign para baixo */
+}
+.input-padrao{    /* "," para utilizar mesma padronização em outra tag */
+    display: block;
+    margin: 0 0 20px;        /* marign para baixo */
+    padding: 10px 25px;      /* no input ja exite a borda, padding aumenta a esp. interno */
+    width: 50%;              /* aumenta o campo do input */
+}
+.checkbox, .seletor{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 20px 0;
+    background: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border:none;
+    border-radius: 5px;
+    transition: 1s; all;  /*  1s para mudar de o botão "enviar" de laranja para vermelho | all= todos elementos levar 1s para aumentar*/
+    cursor: pointer;             /*  Cursor do mouse ficará com a "mãozinha" */
+}
+.enviar:hover{
+    background: red;
+    transform: scale(1.2);   /*  transform: scale(1.2) rotate(70deg); faz as 2 alterações ao mesmo tempo.| Aumentará 20% (=1.2) de todos elementos da class="enviar" */
+}
+table{
+    margin: 20px 0 40px;
+}
+table thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+table td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+

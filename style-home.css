@@ -1,0 +1,144 @@
+body{
+    font-family: 'Montserrat', sans-serif;  /*  Informa que vou usar a familia de fonte */
+}
+header{
+    background: #CCCCCC;
+    padding: 20px 0;      /* espaçamento interno  TOP, UP = 20px LEFT, RIGHT = 0*/
+}
+.caixa{
+    position: relative; /* PRECISO POSICIONAR A CAIXA ("position:relative") PARA PODER POSICIONAR O MENU (nav { position: absolute;    .......     */
+    width: 940px; 
+    margin: 0 auto;  /* espaçamento externo top up = 0  left right = auto (calcula automaticamente)  */
+}
+nav{
+    position: absolute;             /* position: absolute= eu defino o posicionamento atraves dos valores no top, right etc... */
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;               /*  Altero forma de visualição da lista */
+    margin: 0 0 0 15px;            /* margin= espaçamento externo. Espaçamento a ESQUERDA = margin: top 0 right 0 up 0 left 15px;  */    
+}
+nav a{
+    text-transform: uppercase;     /* Altero o comportamento visual do HTML(MENU DE NAV FICA COM LETRAS MAIÚSCULAS */
+    color: #000000;              /* Altera cor do texto */
+    font-weight: bold;             /* NEGRITO */
+    font-size: 26px;               /* tamanho fonte */
+    text-decoration: none;         /* retira decoração do texto. Fica sem o sublinhado */
+}
+nav a:hover{                        /* hover= mouse emcima do elemento.  nav a: hover= vai mapear os links do menu de navegação */
+    color: #c78c19;               /* cor da alteração */
+    text-decoration: underline;     /* função de sublinhar */
+}
+/* css da página inicial */
+.banner {
+    width: 100%;
+}
+.principal {
+    /* padding: 30px;                  /*Espaçamento interno todos lados 30px */
+    width: 100%;
+    padding: 3em 0;
+    background: #fefefe;
+    margin: 0 auto;
+}
+.tamanho-principal{
+    width: 80%;
+    margin: 0 auto;
+}
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;        /* em = tamanho base, ou seja 2em = 2 x tamanho padrão, tamanho base 15px, 2em= 30px */
+    margin: 0 0 1em;        /* margem para baixo de 1em (1x tamanho da fonte da class="titulo-principal */
+    clear: left;            /* Flot sempre desorganiza os outros elementos, por isso necessário Limpar o Float com o CLEAR*/
+}
+
+/* PSEUDO ELEMENTOS */
+
+/* Alterar apenas um elementos de uma classe */
+
+/*  
+.titulo-principal:first-letter {     /* primeira-letra da classe titulo-principal
+    font-weight: bold;              
+}
+.titulo-principal:before {      /* Adiciono antes...
+    content: "[ ";
+}
+.titulo-principal:after {       /* Adiciono depois...
+    content: " ]";
+}
+*/
+
+.principal p {
+    margin: 0 0 1em;        /* * margem para baixo de 1em (1x tamanho da fonte da class= principal P  */ */
+}
+.principal strong {
+    font-weight: bold;
+}
+.principal em {
+    font-style: italic;
+}
+.utensilios{
+    width: 120px;
+    float: left;            /* float= elemento flutua e contorno o elemento */
+    margin: 0 20px 20px 0;  /* 0= top  20=right 20=up 0=left*/
+}
+#missao {
+    font-size: 20px;
+}
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+.conteudo-beneficios { 
+    width: 640px;    /* Llargura da div */
+    margin: 0 auto  ;
+}
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.itens{
+    line-height: 1.5;
+}
+.itens:before{
+    content: "✀"
+}
+.itens:first-child {          /* Pseudo elementos, paga a first= da class "itens"   4°da lista= .itens:nth-child(4) =(Profissionais Qualificados) */
+    font-weight: bold;
+}
+.imagem-beneficios {
+    width: 60%;
+}
+.video{
+    text-align: center;
+    width: 560px;               /* Tamanho c */
+    margin: 4em auto;
+}
+.mapa{
+    padding: 3em 0;
+    text-align: center;
+    background: linear-gradient(#fefefe, #888888)   
+    
+    /* 
+    radial-gradient= redondo 
+    (90deg, pink, red, green, yellow)= 45..60...90 deg angulo que começa o degrade)
+    linear-gradient(90deg, pink 50%, red, green, yellow)= pink 50%= tem matade do degrade pink
+    */
+}
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+ footer{
+    text-align: center;
+    background: url(bg.jpg); /* inserir imagem como fundo "background: url(bg.jpg)" */
+    padding: 20px 0;
+    color: #FFFFFF
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 20px 0;  
+}
+
