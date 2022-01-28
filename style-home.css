@@ -50,7 +50,12 @@ nav a:hover{                        /* hover= mouse emcima do elemento.  nav a: 
     font-size: 2em;        /* em = tamanho base, ou seja 2em = 2 x tamanho padrão, tamanho base 15px, 2em= 30px */
     margin: 0 0 1em;        /* margem para baixo de 1em (1x tamanho da fonte da class="titulo-principal */
     clear: left;            /* Flot sempre desorganiza os outros elementos, por isso necessário Limpar o Float com o CLEAR*/
+    /*  text-shadow: 2px 2px #ff0000;  sombra em texto */
 }
+   /* color: #000000;   equivale color: rgb(0,0,0)   
+   
+    CAMADA ALFA NA CORES
+    opacidade na cor = color: rgba(0,0,0,0.3)  a= camada alfa, 0.3=30% de opacidade na cor                                  */
 
 /* PSEUDO ELEMENTOS */
 
@@ -109,6 +114,14 @@ nav a:hover{                        /* hover= mouse emcima do elemento.  nav a: 
 }
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;             /* opacidade, 1= 100% de visualização da imagem  */
+    transition: 400ms;      /* 400ms para efeito */
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px 10px #000000;   /* pode adicionar várias sombras = box-shadow: 10px 10px 10px 20px #000000, -10px -10px yellow; */
+    /* box-shadow: (eixo X) (eixo Y) (blur= sólido para transparente) (intensidade borda) (cor); */
+}
+.imagem-beneficios:hover{   /* quando mouse passar por cima da imagem */
+    opacity: 0.3;           /* 0.3= 30% de visualização da imagem */
 }
 .video{
     text-align: center;
@@ -141,4 +154,39 @@ nav a:hover{                        /* hover= mouse emcima do elemento.  nav a: 
     font-size: 13px;
     padding: 20px 0;  
 }
+/* SELETORES AVANÇADOS
+Selecionar filhos diretos
+ex.:
+main > p {               Selecionado todos paragrafos dentro da main(filho direto)
+    background: #FFFFFF;
+}
 
+img + p {               img= como elementos ancora, p= elemento "irmão".  com o sinal de "+" apenas o primeiro "p" após o elemento "img".
+    backgoround: blue;
+}
+img ~ p {               img= como elementos ancora, p= elemento "irmão" com o sinal de "~" todos "p" após o elemento "img".
+    backgoround: blue;
+}
+.principal p:not(#missao) {         not= não seleciona para executar a função.
+    background: orange;
+}
+
+*/
+@media screen and (max-width: 480px) {   /* media querys /"@media screen" qual o tamanho da tela (pesquisa) (max-width: 480px) se dispostivos tem tela maior do que 480px  */
+    .caixa, .principal, .conteudo-beneficios, .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios {
+        width: 80%;
+    }
+    .lista-beneficios {
+        padding: 1em;
+    }
+   
+}
