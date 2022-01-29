@@ -182,6 +182,9 @@ img ~ p {               img= como elementos ancora, p= elemento "irmão" com o s
     nav {
         position: static;
     }
+    ul li a {
+        font-size: 20px;
+    }
     .lista-beneficios, .imagem-beneficios {
         width: 80%;
     }

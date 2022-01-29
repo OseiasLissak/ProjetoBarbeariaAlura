@@ -1,4 +1,8 @@
+body{
+    font-family: 'Montserrat', sans-serif;  /*  Informa que vou usar a familia de fonte */
+}
 header{
+    width: auto;
     background: #CCCCCC;
     padding: 20px 0;      /* espaçamento interno  TOP, UP = 20px LEFT, RIGHT = 0*/
 }
@@ -28,11 +32,12 @@ nav a:hover{                        /* hover= mouse emcima do elemento.  nav a: 
     text-decoration: underline;     /* função de sublinhar */
 }
 .produtos{
-    width: 940px;
+    width: auto;
     margin: 0 auto;                /*  0 UP and TOP, auto para os lados     */
     padding: 50px 0 ;              /* 50px= UP TOP 0= right left */    
 }
 .produtos li{
+
     display: inline-block;         /* inline-block= vai exibir o seu tamanho, porém permite lterar o tamanho*/
     text-align: center;            /*  centraliza todos itens do produtos */
     width: 30%;                    /* cada elemento ter 30% de 100% da página */
@@ -124,4 +129,50 @@ table td, th{
     border: 1px solid black;
     padding: 8px 15px;
 }
+@media screen and (max-width: 480px) {
+    .caixa, footer, main {
+        width: auto;
+    }
+    h1 {
+        text-align: center; 
+    }
+    nav {
+        position: static;
+        width: auto;
+    }
+    ul li a {
+        font-size: 20px;
+    }
+    .produtos {
+        width: auto;
+        text-align: center;
+    }
+    .produtos li {
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .itens-produtos:nth-child(2) {    /*  PSEUDO CLASSES: elemento 2 do itens-produtos */
+        margin: 2em auto;
+    }
+    main table {
+        margin: 3em auto;
+    }
+    form {
+        margin: 2em 20px;
+    }
+    .enviar {
+        width: 80%;
+        display: block;
+        margin: 2em auto 0 auto;
+    }
+    .input-padrao {
+        width: 85%;   
+    }
+
+
+}
+
+
 
