@@ -176,6 +176,9 @@ img ~ p {               img= como elementos ancora, p= elemento "irmão" com o s
     .caixa, .principal, .conteudo-beneficios, .video {
         width: auto;
     }
+    .conteudo-beneficios{
+        text-align: center;
+    }
     h1 {
         text-align: center;
     }
@@ -190,6 +193,7 @@ img ~ p {               img= como elementos ancora, p= elemento "irmão" com o s
     }
     .lista-beneficios {
         padding: 1em;
+        text-align: initial;
     }
    
 }
