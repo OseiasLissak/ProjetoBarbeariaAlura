@@ -1,5 +1,10 @@
 # Barbearia Alura
 
+<p align="center">
+  <img width="300" height="250" src="img/logoalura.JPG">
+</p>
+
+
 # Sobre o Projeto
 
 Site Barbearia Alura (Cursos Alura HTML e CSS)
@@ -22,8 +27,11 @@ Com a criação do projeto foi possível aplicar os conhecimentos adquiridos e m
 <h4>
   
 ## Layout responsivo
-  
-![image](https://user-images.githubusercontent.com/92828735/201259202-8ed53494-5389-4f07-9e09-9780ff6928e1.png)
+ 
+
+<p align="center">
+<img width="350" height="600" src="img/responsivo alura.JPG">
+</p>
 
 ## Link do projeto
 
@@ -46,10 +54,10 @@ Pré-requisitos: npm / yarn
 ```bash
 # clonar repositório
   
-git clone https://github.com/OseiasLissak/GuiaDoMochileiro.git
+git clone https://github.com/OseiasLissak/ProjetoBarbeariaAlura.git
 
-# entrar na pasta do projeto GuiaDoMochileiro
-cd GuiaDoMochileiro
+# entrar na pasta do projeto ProjetoBarbeariaAlura
+cd ProjetoBarbeariaAlura
 
 
 # instalar dependências
