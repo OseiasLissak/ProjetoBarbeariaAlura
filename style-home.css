@@ -145,7 +145,7 @@ nav a:hover{                        /* hover= mouse emcima do elemento.  nav a: 
 }
  footer{
     text-align: center;
-    background: url(bg.jpg); /* inserir imagem como fundo "background: url(bg.jpg)" */
+    background: url(/img/bg.jpg); /* inserir imagem como fundo "background: url(bg.jpg)" */
     padding: 20px 0;
     color: #FFFFFF
 }
